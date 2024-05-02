@@ -222,7 +222,7 @@ Console.ReadLine();
 //Números de la Serie Fibonacci: 
 //10) Genera los primeros 10 números de la serie Fibonacci. 
 
-Console.WriteLine("Los primeros 10 números de la serie Fobonacci");
+Console.WriteLine("Los primeros 10 números de la serie Fibonacci");
 for (int Fi = 0; Fi < 10; Fi++)
 {
     Console.WriteLine(Fibonacci(Fi));
