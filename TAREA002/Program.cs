@@ -134,7 +134,18 @@
 //}
 ////9) Accede al elemento central de una matriz.
 
-
+//int[,] matriz =
+//    {
+//            {1, 2, 3},
+//            {4, 5, 6},
+//            {7, 8, 9}
+//    };
+//int filas = matriz.GetLength(0);
+//int columnas = matriz.GetLength(1);
+//int indiceFilaCentral = (filas - 1) / 2;
+//int indiceColumnaCentral = (columnas - 1) / 2;
+//int elementoCentral = matriz[indiceFilaCentral, indiceColumnaCentral];
+//Console.WriteLine("Elemento central: {0}", elementoCentral);
 
 ////10) Suma dos matrices de diferentes tamaños.
 ////11) Multiplica una matriz por un número.
@@ -221,11 +232,11 @@
 
 //int[,] MatrizA = new int[4, 4];
 //Random t = new Random();
-//for (int i = 0; i < 4; i++) //creamos una matriz de 4x4 con numeros aleatorios
+//for (int i = 0; i < 4; i++)
 //{
 //    for (int j = 0; j < 4; j++)
 //    {
-//        MatrizA[i, j] = t.Next(1, 200);//generamos numeros aleatorios del 1 al 9
+//        MatrizA[i, j] = t.Next(1, 200);
 //        Console.Write(MatrizA[i, j] + " ");
 //    }
 //    Console.WriteLine(" ");
