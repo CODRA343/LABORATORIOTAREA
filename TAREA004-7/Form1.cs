@@ -40,7 +40,7 @@ namespace TAREA004_7
 
             return true;
         }
-        private void btnAñadir_Click(object sender, EventArgs e)
+            private void btnAñadir_Click(object sender, EventArgs e)
         {
             string palabra = txtPalabras.Text.ToLower();
             lista.Add(palabra);
@@ -61,16 +61,18 @@ namespace TAREA004_7
 
             foreach (var item in lista)
             {
-                if (Anagrama(palabra, item))
+                if (Anagrama(palabra, item)) // Check for anagrams
                 {
                     lista2.Add(item);
                 }
             }
 
+            // Display anagrams in txtLista2
             foreach (var item in lista2)
             {
                 txtLista2.AppendText(item + Environment.NewLine);
             }
+            txtLista2.Clear();
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
@@ -91,6 +93,11 @@ namespace TAREA004_7
         }
 
         private void txtPalabras_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
