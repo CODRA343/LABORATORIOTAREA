@@ -20,21 +20,21 @@
 
 ////2) Ejercicio 2: Escribe una función recursiva que imprima la suma de los números del 1 al n.
 
-//Console.Write("Ingrese un numero entero positivo: ");
-//int a = int.Parse(Console.ReadLine());
-//int sumatoria(int a)
-//{
-//    if (a > 0)
-//    {
-//        int valor = a + sumatoria(a - 1);
-//        return valor;
-//    }
-//    else
-//        return 0;
-//}
-//int v = sumatoria(a);
-//Console.WriteLine("La suma es " + v);
-//Console.ReadKey();
+Console.Write("Ingrese un numero entero positivo: ");
+int a = int.Parse(Console.ReadLine());
+int sumatoria(int a)
+{
+    if (a > 0)
+    {
+        int valor = a + sumatoria(a - 1);
+        return valor;
+    }
+    else
+        return 0;
+}
+int v = sumatoria(a);
+Console.WriteLine("La suma es " + v);
+Console.ReadKey();
 
 ////3) Ejercicio 3: Escribe una función recursiva que imprima la pirámide de números del 1 al n.
 

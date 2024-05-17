@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TAREA001", "TAREA001\TAREA0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TAREA002", "TAREA002\TAREA002.csproj", "{B0A731A0-4EDF-4682-B43B-64C4F61824F3}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prueba", "Prueba\Prueba.csproj", "{DFDAD4CD-590E-452A-AF45-921AA046F514}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TAREA004-2", "TAREA004-2\TAREA004-2.csproj", "{B12B46CA-4033-445A-9CCC-BC76356F6A7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{B0A731A0-4EDF-4682-B43B-64C4F61824F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0A731A0-4EDF-4682-B43B-64C4F61824F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0A731A0-4EDF-4682-B43B-64C4F61824F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFDAD4CD-590E-452A-AF45-921AA046F514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFDAD4CD-590E-452A-AF45-921AA046F514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFDAD4CD-590E-452A-AF45-921AA046F514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFDAD4CD-590E-452A-AF45-921AA046F514}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B12B46CA-4033-445A-9CCC-BC76356F6A7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B12B46CA-4033-445A-9CCC-BC76356F6A7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B12B46CA-4033-445A-9CCC-BC76356F6A7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B12B46CA-4033-445A-9CCC-BC76356F6A7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
