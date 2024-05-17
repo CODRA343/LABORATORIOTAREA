@@ -61,6 +61,8 @@ namespace TAREA004_5
             txtLista1.Clear();
             txtLista2.Clear();
             txtLista3.Clear();
+            lista1.Clear();
+            lista2.Clear();
             txtConjunto1.Focus();
         }
 
@@ -75,6 +77,11 @@ namespace TAREA004_5
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

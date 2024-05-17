@@ -52,6 +52,7 @@ namespace TAREA004_2
             txtPalabra.Clear();
             txtLista1.Clear();
             txtLista2.Clear();
+            lista.Clear();
             txtPalabra.Focus();
         }
 

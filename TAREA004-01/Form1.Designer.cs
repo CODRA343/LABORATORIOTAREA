@@ -1,4 +1,4 @@
-﻿namespace TAREA004_12
+﻿namespace TAREA004_01
 {
     partial class Form1
     {
@@ -45,11 +45,11 @@
             // 
             label5.AutoSize = true;
             label5.BackColor = SystemColors.ActiveCaption;
-            label5.Location = new Point(235, 9);
+            label5.Location = new Point(271, 18);
             label5.Name = "label5";
-            label5.Size = new Size(334, 15);
+            label5.Size = new Size(244, 15);
             label5.TabIndex = 26;
-            label5.Text = "DEVOLVER LAS NÚMEROS ORDENADOS DE MAYOR A MENOR\r\n";
+            label5.Text = "DEVOLVER LOS NÚMEROS QUE SON PRIMOS";
             // 
             // btnSalir
             // 
@@ -83,7 +83,7 @@
             // 
             // btnAñadir
             // 
-            btnAñadir.Location = new Point(37, 129);
+            btnAñadir.Location = new Point(37, 140);
             btnAñadir.Name = "btnAñadir";
             btnAñadir.Size = new Size(91, 22);
             btnAñadir.TabIndex = 22;
@@ -93,7 +93,7 @@
             // 
             // txtPalabra
             // 
-            txtPalabra.Location = new Point(37, 83);
+            txtPalabra.Location = new Point(37, 94);
             txtPalabra.Name = "txtPalabra";
             txtPalabra.Size = new Size(239, 23);
             txtPalabra.TabIndex = 21;
@@ -121,9 +121,9 @@
             label4.AutoSize = true;
             label4.Location = new Point(406, 212);
             label4.Name = "label4";
-            label4.Size = new Size(217, 15);
+            label4.Size = new Size(96, 15);
             label4.TabIndex = 17;
-            label4.Text = "Números Ordenados de Mayor a Menor";
+            label4.Text = "Números Primos";
             // 
             // label3
             // 
@@ -132,12 +132,12 @@
             label3.Name = "label3";
             label3.Size = new Size(116, 15);
             label3.TabIndex = 16;
-            label3.Text = "Números Guardados";
+            label3.Text = "Números ingresados";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(37, 56);
+            label2.Location = new Point(37, 67);
             label2.Name = "label2";
             label2.Size = new Size(115, 15);
             label2.TabIndex = 15;
@@ -160,7 +160,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Name = "Form1";
-            Text = "EJERCICIO 12";
+            Text = "EJERCICIO 1";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();

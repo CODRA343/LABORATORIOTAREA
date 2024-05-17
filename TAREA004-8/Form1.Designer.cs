@@ -161,6 +161,7 @@
             Controls.Add(label2);
             Name = "Form1";
             Text = "EJERCICIO 8";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }

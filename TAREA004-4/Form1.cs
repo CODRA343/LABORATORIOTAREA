@@ -53,6 +53,8 @@ namespace TAREA004_4
             txtLista1.Clear();
             txtLista2.Clear();
             txtLista3.Clear();
+            lista1.Clear();
+            lista2.Clear();
             txtConjunto1.Focus();
         }
 

@@ -51,12 +51,18 @@ namespace TAREA004_10
             txtPalabra.Clear();
             txtLista1.Clear();
             txtLista2.Clear();
+            lista.Clear();
             txtPalabra.Focus();
         }
 
         private void btnSalir_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

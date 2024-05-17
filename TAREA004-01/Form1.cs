@@ -1,6 +1,4 @@
-using static System.Runtime.InteropServices.JavaScript.JSType;
-
-namespace TAREA004_11
+namespace TAREA004_01
 {
     public partial class Form1 : Form
     {
@@ -9,7 +7,17 @@ namespace TAREA004_11
             InitializeComponent();
         }
         private List<int> lista = new List<int>();
-
+        static bool EsPrimo(int numero)
+        {
+            for (int i = 2; i < numero; i++)
+            {
+                if ((numero % i) == 0)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -29,8 +37,15 @@ namespace TAREA004_11
 
         private void btnFiltrar_Click(object sender, EventArgs e)
         {
-            var lista2 = new List<int>(lista);
-            lista2.Sort();
+            var lista2 = new List<int>();
+            foreach (var item in lista)
+            {
+                var p = EsPrimo(item);
+                if (p)
+                {
+                    lista2.Add(item);
+                }
+            }
             txtLista2.Clear();
             foreach (var item in lista2)
             {
@@ -53,4 +68,3 @@ namespace TAREA004_11
         }
     }
 }
-

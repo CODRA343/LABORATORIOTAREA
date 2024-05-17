@@ -61,12 +61,18 @@ namespace TAREA004_8
             txtPalabra.Clear();
             txtLista1.Clear();
             txtLista2.Clear();
+            lista.Clear();
             txtPalabra.Focus();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

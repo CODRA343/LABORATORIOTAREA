@@ -43,6 +43,7 @@ namespace TAREA004_3
             txtNumero.Clear();
             txtLista1.Clear();
             txtLista2.Clear();
+            lista.Clear();
             txtNumero.Focus();
         }
 
