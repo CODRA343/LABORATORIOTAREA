@@ -61,6 +61,7 @@
             label2.Size = new Size(109, 15);
             label2.TabIndex = 1;
             label2.Text = "Ingresa las palabras";
+            label2.Click += label2_Click;
             // 
             // label3
             // 
@@ -70,6 +71,7 @@
             label3.Size = new Size(109, 15);
             label3.TabIndex = 2;
             label3.Text = "Palabras guardadas";
+            label3.Click += this.label3_Click;
             // 
             // label4
             // 
@@ -79,6 +81,7 @@
             label4.Size = new Size(98, 15);
             label4.TabIndex = 3;
             label4.Text = "Palabras Filtradas";
+            label4.Click += this.label4_Click;
             // 
             // cboPalabra
             // 
@@ -99,6 +102,7 @@
             txtLista1.ReadOnly = true;
             txtLista1.Size = new Size(273, 120);
             txtLista1.TabIndex = 6;
+            txtLista1.TextChanged += this.txtLista1_TextChanged;
             // 
             // txtLista2
             // 
@@ -108,6 +112,7 @@
             txtLista2.ReadOnly = true;
             txtLista2.Size = new Size(273, 134);
             txtLista2.TabIndex = 7;
+            txtLista2.TextChanged += this.txtLista2_TextChanged;
             // 
             // txtPalabra
             // 

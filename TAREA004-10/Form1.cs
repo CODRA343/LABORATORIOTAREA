@@ -1,4 +1,4 @@
-namespace TAREA004_2
+namespace TAREA004_10
 {
     public partial class Form1 : Form
     {
@@ -7,16 +7,13 @@ namespace TAREA004_2
             InitializeComponent();
         }
         private List<string> lista = new List<string>();
-        private void label1_Click(object sender, EventArgs e)
+
+        private void cboPalabra_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnAñadir_Click(object sender, EventArgs e)
         {
             string palabra = txtPalabra.Text.ToLower();
             lista.Add(palabra);
@@ -29,13 +26,14 @@ namespace TAREA004_2
             txtPalabra.Focus();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnFiltrar_Click(object sender, EventArgs e)
         {
             string letra = cboPalabra.Text.ToLower();
             var lista2 = new List<string>();
+
             foreach (var item in lista)
             {
-                if (item.StartsWith(letra))
+                if (item.ToLower().Contains(letra))
                 {
                     lista2.Add(item);
                 }
@@ -47,7 +45,8 @@ namespace TAREA004_2
                 txtLista2.AppendText(item + Environment.NewLine);
             }
         }
-        private void button3_Click(object sender, EventArgs e)
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
         {
             txtPalabra.Clear();
             txtLista1.Clear();
@@ -55,28 +54,9 @@ namespace TAREA004_2
             txtPalabra.Focus();
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
+        private void btnSalir_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void txtPalabra_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
