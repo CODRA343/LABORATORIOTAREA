@@ -54,7 +54,6 @@ namespace TAREA004_4
             txtLista2.Clear();
             txtLista3.Clear();
             txtConjunto1.Focus();
-            txtConjunto2.Focus();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

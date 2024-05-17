@@ -1,4 +1,4 @@
-namespace TAREA004_5
+namespace TAREA004_6
 {
     public partial class Form1 : Form
     {
@@ -8,11 +8,10 @@ namespace TAREA004_5
         }
         private List<int> lista1 = new List<int>();
         private List<int> lista2 = new List<int>();
-        private void txtConjunto1_TextChanged(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
-
         private void btnAñadir1_Click(object sender, EventArgs e)
         {
             lista1.Add(int.Parse(txtConjunto1.Text));
@@ -24,8 +23,7 @@ namespace TAREA004_5
             txtConjunto1.Clear();
             txtConjunto1.Focus();
         }
-
-        private void btnAñadir2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             lista2.Add(int.Parse(txtConjunto2.Text));
             txtLista2.Clear();
@@ -37,13 +35,13 @@ namespace TAREA004_5
             txtConjunto2.Focus();
         }
 
-        private void btnRestar_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             var lista3 = new List<int>();
             txtLista3.Clear();
-            foreach (var item in lista1)
+            foreach (var item in lista2)
             {
-                if (!lista2.Contains(item))
+                if (!lista1.Contains(item))
                 {
                     lista3.Add(item);
                 }
@@ -54,7 +52,7 @@ namespace TAREA004_5
             }
         }
 
-        private void btnLimpiar_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
             txtConjunto1.Clear();
             txtConjunto2.Clear();
@@ -63,12 +61,10 @@ namespace TAREA004_5
             txtLista3.Clear();
             txtConjunto1.Focus();
         }
-
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
         private void txtConjunto2_TextChanged(object sender, EventArgs e)
         {
 
