@@ -34,26 +34,26 @@
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
+            txtConjunto1 = new TextBox();
+            txtConjunto2 = new TextBox();
+            txtLista3 = new TextBox();
+            txtLista1 = new TextBox();
+            txtLista2 = new TextBox();
+            btnAñadir1 = new Button();
+            btnAñadir2 = new Button();
+            btnRestar = new Button();
+            btnLimpiar = new Button();
+            btnSalir = new Button();
             SuspendLayout();
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(458, 60);
+            label6.Location = new Point(458, 75);
             label6.Name = "label6";
-            label6.Size = new Size(131, 15);
+            label6.Size = new Size(107, 15);
             label6.TabIndex = 48;
-            label6.Text = "Union de los Conjuntos";
+            label6.Text = "Resta de conjuntos";
             // 
             // label1
             // 
@@ -77,20 +77,20 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(248, 170);
+            label4.Location = new Point(248, 174);
             label4.Name = "label4";
             label4.Size = new Size(107, 15);
             label4.TabIndex = 45;
-            label4.Text = "Numeros divisibles";
+            label4.Text = "Segundo Conjunto";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(46, 170);
+            label3.Location = new Point(46, 173);
             label3.Name = "label3";
-            label3.Size = new Size(116, 15);
+            label3.Size = new Size(95, 15);
             label3.TabIndex = 44;
-            label3.Text = "Numeros Guardados";
+            label3.Text = "Primer Conjunto";
             // 
             // label2
             // 
@@ -101,104 +101,113 @@
             label2.TabIndex = 43;
             label2.Text = "Ingrese los numeros\r\ndel primer conjunto";
             // 
-            // textBox1
+            // txtConjunto1
             // 
-            textBox1.Location = new Point(46, 103);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(154, 23);
-            textBox1.TabIndex = 49;
+            txtConjunto1.Location = new Point(46, 103);
+            txtConjunto1.Name = "txtConjunto1";
+            txtConjunto1.Size = new Size(154, 23);
+            txtConjunto1.TabIndex = 49;
+            txtConjunto1.TextChanged += txtConjunto1_TextChanged;
             // 
-            // textBox2
+            // txtConjunto2
             // 
-            textBox2.Location = new Point(248, 103);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(154, 23);
-            textBox2.TabIndex = 50;
+            txtConjunto2.Location = new Point(248, 103);
+            txtConjunto2.Name = "txtConjunto2";
+            txtConjunto2.Size = new Size(154, 23);
+            txtConjunto2.TabIndex = 50;
             // 
-            // textBox3
+            // txtLista3
             // 
-            textBox3.Location = new Point(458, 103);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(236, 277);
-            textBox3.TabIndex = 51;
+            txtLista3.Location = new Point(458, 103);
+            txtLista3.Multiline = true;
+            txtLista3.Name = "txtLista3";
+            txtLista3.ReadOnly = true;
+            txtLista3.Size = new Size(236, 277);
+            txtLista3.TabIndex = 51;
             // 
-            // textBox4
+            // txtLista1
             // 
-            textBox4.Location = new Point(46, 204);
-            textBox4.Multiline = true;
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(154, 176);
-            textBox4.TabIndex = 52;
+            txtLista1.Location = new Point(46, 204);
+            txtLista1.Multiline = true;
+            txtLista1.Name = "txtLista1";
+            txtLista1.ReadOnly = true;
+            txtLista1.Size = new Size(154, 176);
+            txtLista1.TabIndex = 52;
             // 
-            // textBox5
+            // txtLista2
             // 
-            textBox5.Location = new Point(248, 204);
-            textBox5.Multiline = true;
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(154, 176);
-            textBox5.TabIndex = 53;
+            txtLista2.Location = new Point(248, 204);
+            txtLista2.Multiline = true;
+            txtLista2.Name = "txtLista2";
+            txtLista2.ReadOnly = true;
+            txtLista2.Size = new Size(154, 176);
+            txtLista2.TabIndex = 53;
             // 
-            // button1
+            // btnAñadir1
             // 
-            button1.Location = new Point(46, 139);
-            button1.Name = "button1";
-            button1.Size = new Size(122, 23);
-            button1.TabIndex = 54;
-            button1.Text = "Añadir";
-            button1.UseVisualStyleBackColor = true;
+            btnAñadir1.Location = new Point(46, 139);
+            btnAñadir1.Name = "btnAñadir1";
+            btnAñadir1.Size = new Size(122, 23);
+            btnAñadir1.TabIndex = 54;
+            btnAñadir1.Text = "Añadir";
+            btnAñadir1.UseVisualStyleBackColor = true;
+            btnAñadir1.Click += btnAñadir1_Click;
             // 
-            // button2
+            // btnAñadir2
             // 
-            button2.Location = new Point(248, 139);
-            button2.Name = "button2";
-            button2.Size = new Size(122, 23);
-            button2.TabIndex = 55;
-            button2.Text = "Añadir";
-            button2.UseVisualStyleBackColor = true;
+            btnAñadir2.Location = new Point(248, 139);
+            btnAñadir2.Name = "btnAñadir2";
+            btnAñadir2.Size = new Size(122, 23);
+            btnAñadir2.TabIndex = 55;
+            btnAñadir2.Text = "Añadir";
+            btnAñadir2.UseVisualStyleBackColor = true;
+            btnAñadir2.Click += btnAñadir2_Click;
             // 
-            // button3
+            // btnRestar
             // 
-            button3.Location = new Point(45, 406);
-            button3.Name = "button3";
-            button3.Size = new Size(154, 23);
-            button3.TabIndex = 56;
-            button3.Text = "Restar";
-            button3.UseVisualStyleBackColor = true;
+            btnRestar.Location = new Point(45, 406);
+            btnRestar.Name = "btnRestar";
+            btnRestar.Size = new Size(154, 23);
+            btnRestar.TabIndex = 56;
+            btnRestar.Text = "Restar";
+            btnRestar.UseVisualStyleBackColor = true;
+            btnRestar.Click += btnRestar_Click;
             // 
-            // button4
+            // btnLimpiar
             // 
-            button4.Location = new Point(324, 406);
-            button4.Name = "button4";
-            button4.Size = new Size(149, 23);
-            button4.TabIndex = 57;
-            button4.Text = "button4";
-            button4.UseVisualStyleBackColor = true;
+            btnLimpiar.Location = new Point(324, 406);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.Size = new Size(149, 23);
+            btnLimpiar.TabIndex = 57;
+            btnLimpiar.Text = "Limpiar";
+            btnLimpiar.UseVisualStyleBackColor = true;
+            btnLimpiar.Click += btnLimpiar_Click;
             // 
-            // button5
+            // btnSalir
             // 
-            button5.Location = new Point(591, 406);
-            button5.Name = "button5";
-            button5.Size = new Size(129, 23);
-            button5.TabIndex = 58;
-            button5.Text = "button5";
-            button5.UseVisualStyleBackColor = true;
+            btnSalir.Location = new Point(591, 406);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(129, 23);
+            btnSalir.TabIndex = 58;
+            btnSalir.Text = "Salir";
+            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(btnSalir);
+            Controls.Add(btnLimpiar);
+            Controls.Add(btnRestar);
+            Controls.Add(btnAñadir2);
+            Controls.Add(btnAñadir1);
+            Controls.Add(txtLista2);
+            Controls.Add(txtLista1);
+            Controls.Add(txtLista3);
+            Controls.Add(txtConjunto2);
+            Controls.Add(txtConjunto1);
             Controls.Add(label6);
             Controls.Add(label1);
             Controls.Add(label5);
@@ -219,15 +228,15 @@
         private Label label4;
         private Label label3;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
+        private TextBox txtConjunto1;
+        private TextBox txtConjunto2;
+        private TextBox txtLista3;
+        private TextBox txtLista1;
+        private TextBox txtLista2;
+        private Button btnAñadir1;
+        private Button btnAñadir2;
+        private Button btnRestar;
+        private Button btnLimpiar;
+        private Button btnSalir;
     }
 }

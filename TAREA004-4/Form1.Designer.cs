@@ -100,14 +100,16 @@
             // 
             txtConjunto1.Location = new Point(37, 102);
             txtConjunto1.Name = "txtConjunto1";
-            txtConjunto1.Size = new Size(127, 23);
+            txtConjunto1.Size = new Size(152, 23);
             txtConjunto1.TabIndex = 33;
+            txtConjunto1.TextChanged += txtConjunto1_TextChanged;
             // 
             // txtLista2
             // 
             txtLista2.Location = new Point(239, 196);
             txtLista2.Multiline = true;
             txtLista2.Name = "txtLista2";
+            txtLista2.ReadOnly = true;
             txtLista2.Size = new Size(149, 184);
             txtLista2.TabIndex = 32;
             // 
@@ -116,7 +118,8 @@
             txtLista1.Location = new Point(37, 196);
             txtLista1.Multiline = true;
             txtLista1.Name = "txtLista1";
-            txtLista1.Size = new Size(127, 184);
+            txtLista1.ReadOnly = true;
+            txtLista1.Size = new Size(152, 184);
             txtLista1.TabIndex = 31;
             // 
             // label4
@@ -126,7 +129,7 @@
             label4.Name = "label4";
             label4.Size = new Size(107, 15);
             label4.TabIndex = 30;
-            label4.Text = "Numeros divisibles";
+            label4.Text = "Segundo Conjunto";
             label4.Click += label4_Click;
             // 
             // label3
@@ -134,9 +137,9 @@
             label3.AutoSize = true;
             label3.Location = new Point(37, 170);
             label3.Name = "label3";
-            label3.Size = new Size(116, 15);
+            label3.Size = new Size(95, 15);
             label3.TabIndex = 29;
-            label3.Text = "Numeros Guardados";
+            label3.Text = "Primer Conjunto";
             // 
             // label2
             // 
@@ -179,6 +182,7 @@
             txtLista3.Location = new Point(449, 83);
             txtLista3.Multiline = true;
             txtLista3.Name = "txtLista3";
+            txtLista3.ReadOnly = true;
             txtLista3.Size = new Size(274, 297);
             txtLista3.TabIndex = 43;
             // 

@@ -76,6 +76,11 @@ namespace TAREA004_4
         {
 
         }
+
+        private void txtConjunto1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
