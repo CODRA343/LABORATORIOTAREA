@@ -32,7 +32,6 @@ namespace Laboratorio8
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
             txtNumero = new TextBox();
             btnAgregarNumero = new Button();
             txtLista1 = new TextBox();
@@ -40,23 +39,12 @@ namespace Laboratorio8
             btnPrimos = new Button();
             SuspendLayout();
             // 
-            // button1
-            // 
-            button1.Location = new Point(22, 22);
-            button1.Margin = new Padding(3, 2, 3, 2);
-            button1.Name = "button1";
-            button1.Size = new Size(82, 25);
-            button1.TabIndex = 0;
-            button1.Text = "Agregar";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
             // txtNumero
             // 
-            txtNumero.Location = new Point(227, 24);
+            txtNumero.Location = new Point(227, 22);
             txtNumero.Margin = new Padding(3, 2, 3, 2);
             txtNumero.Name = "txtNumero";
-            txtNumero.Size = new Size(110, 23);
+            txtNumero.Size = new Size(115, 23);
             txtNumero.TabIndex = 1;
             txtNumero.TextChanged += txtNumero_TextChanged;
             // 
@@ -112,7 +100,6 @@ namespace Laboratorio8
             Controls.Add(txtLista1);
             Controls.Add(btnAgregarNumero);
             Controls.Add(txtNumero);
-            Controls.Add(button1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Form1";
@@ -122,8 +109,6 @@ namespace Laboratorio8
         }
 
         #endregion
-
-        private Button button1;
         private TextBox txtNumero;
         private Button btnAgregarNumero;
         private TextBox txtLista1;

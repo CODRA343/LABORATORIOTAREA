@@ -11,12 +11,6 @@ namespace TAREA004_2
         {
 
         }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -75,6 +69,11 @@ namespace TAREA004_2
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

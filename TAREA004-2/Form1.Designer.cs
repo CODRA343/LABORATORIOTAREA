@@ -40,12 +40,13 @@
             btnFiltrar = new Button();
             btnLimpiar = new Button();
             btnSalir = new Button();
+            label5 = new Label();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 9);
+            label1.Location = new Point(18, 47);
             label1.Name = "label1";
             label1.Size = new Size(83, 15);
             label1.TabIndex = 0;
@@ -55,7 +56,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 92);
+            label2.Location = new Point(18, 130);
             label2.Name = "label2";
             label2.Size = new Size(109, 15);
             label2.TabIndex = 1;
@@ -64,7 +65,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(381, 9);
+            label3.Location = new Point(387, 47);
             label3.Name = "label3";
             label3.Size = new Size(109, 15);
             label3.TabIndex = 2;
@@ -73,7 +74,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(381, 172);
+            label4.Location = new Point(387, 210);
             label4.Name = "label4";
             label4.Size = new Size(98, 15);
             label4.TabIndex = 3;
@@ -84,7 +85,7 @@
             cboPalabra.DropDownStyle = ComboBoxStyle.DropDownList;
             cboPalabra.FormattingEnabled = true;
             cboPalabra.Items.AddRange(new object[] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" });
-            cboPalabra.Location = new Point(12, 43);
+            cboPalabra.Location = new Point(18, 81);
             cboPalabra.Name = "cboPalabra";
             cboPalabra.Size = new Size(121, 23);
             cboPalabra.TabIndex = 5;
@@ -92,7 +93,7 @@
             // 
             // txtLista1
             // 
-            txtLista1.Location = new Point(381, 32);
+            txtLista1.Location = new Point(387, 70);
             txtLista1.Multiline = true;
             txtLista1.Name = "txtLista1";
             txtLista1.Size = new Size(273, 120);
@@ -100,7 +101,7 @@
             // 
             // txtLista2
             // 
-            txtLista2.Location = new Point(381, 199);
+            txtLista2.Location = new Point(387, 237);
             txtLista2.Multiline = true;
             txtLista2.Name = "txtLista2";
             txtLista2.Size = new Size(273, 134);
@@ -108,7 +109,7 @@
             // 
             // txtPalabra
             // 
-            txtPalabra.Location = new Point(12, 119);
+            txtPalabra.Location = new Point(18, 157);
             txtPalabra.Name = "txtPalabra";
             txtPalabra.Size = new Size(239, 23);
             txtPalabra.TabIndex = 8;
@@ -116,7 +117,7 @@
             // 
             // btnAñadir
             // 
-            btnAñadir.Location = new Point(12, 165);
+            btnAñadir.Location = new Point(18, 203);
             btnAñadir.Name = "btnAñadir";
             btnAñadir.Size = new Size(91, 22);
             btnAñadir.TabIndex = 9;
@@ -126,7 +127,7 @@
             // 
             // btnFiltrar
             // 
-            btnFiltrar.Location = new Point(12, 393);
+            btnFiltrar.Location = new Point(18, 405);
             btnFiltrar.Name = "btnFiltrar";
             btnFiltrar.Size = new Size(165, 22);
             btnFiltrar.TabIndex = 10;
@@ -136,7 +137,7 @@
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new Point(338, 393);
+            btnLimpiar.Location = new Point(344, 405);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(121, 22);
             btnLimpiar.TabIndex = 11;
@@ -146,7 +147,7 @@
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(641, 393);
+            btnSalir.Location = new Point(647, 405);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(97, 22);
             btnSalir.TabIndex = 12;
@@ -154,11 +155,23 @@
             btnSalir.UseVisualStyleBackColor = true;
             btnSalir.Click += btnSalir_Click;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = SystemColors.ActiveCaption;
+            label5.Location = new Point(139, 19);
+            label5.Name = "label5";
+            label5.Size = new Size(480, 15);
+            label5.TabIndex = 13;
+            label5.Text = "DEVOLVER LAS PALABRAS QUE INICIEN CON UNA LETRA ESPECIFICADA POR EL USUARIO";
+            label5.Click += label5_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label5);
             Controls.Add(btnSalir);
             Controls.Add(btnLimpiar);
             Controls.Add(btnFiltrar);
@@ -192,5 +205,6 @@
         private Button btnFiltrar;
         private Button btnLimpiar;
         private Button btnSalir;
+        private Label label5;
     }
 }
