@@ -19,12 +19,6 @@ namespace TAREA004_3
             txtNumero.Clear();
             txtNumero.Focus();
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnFiltrar_Click(object sender, EventArgs e)
         {
             int divisor = int.Parse(txtDivisor.Text);
@@ -55,6 +49,10 @@ namespace TAREA004_3
         private void btnSalir_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void Form1_Load(object sender, EventArgs e)

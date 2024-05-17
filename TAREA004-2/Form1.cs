@@ -47,17 +47,6 @@ namespace TAREA004_2
                 txtLista2.AppendText(item + Environment.NewLine);
             }
         }
-
-        private void txtPalabra_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             txtPalabra.Clear();
@@ -71,6 +60,15 @@ namespace TAREA004_2
             Application.Exit();
         }
 
+        private void txtPalabra_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
         private void label5_Click(object sender, EventArgs e)
         {
 

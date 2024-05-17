@@ -96,6 +96,7 @@
             txtLista1.Location = new Point(387, 70);
             txtLista1.Multiline = true;
             txtLista1.Name = "txtLista1";
+            txtLista1.ReadOnly = true;
             txtLista1.Size = new Size(273, 120);
             txtLista1.TabIndex = 6;
             // 
@@ -104,6 +105,7 @@
             txtLista2.Location = new Point(387, 237);
             txtLista2.Multiline = true;
             txtLista2.Name = "txtLista2";
+            txtLista2.ReadOnly = true;
             txtLista2.Size = new Size(273, 134);
             txtLista2.TabIndex = 7;
             // 
@@ -185,7 +187,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "EJERCICIO 2";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
